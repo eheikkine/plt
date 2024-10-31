@@ -33,4 +33,8 @@ class TestPigLatin(unittest.TestCase):
         translator = PigLatin("known")
         self.assertEqual("ownknay", translator.translate())
 
+    def test_words_separated_by_white_space(self):
+        translator = PigLatin("hello world")
+        self.assertEqual("ellohay orldway", translator.translate())
+
 
