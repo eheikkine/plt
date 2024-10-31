@@ -10,3 +10,11 @@ class PigLatin:
         if not self._phrase:
             return "nil"
 
+        vowels = ['a', 'e', 'i', 'o', 'u']
+        first_letter = self._phrase[0]
+
+        if first_letter in vowels and self._phrase[-1] == "y":
+            return self._phrase + "nay"
+
+
+
