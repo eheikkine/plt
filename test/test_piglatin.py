@@ -5,5 +5,6 @@ from error import PigLatinError
 
 class TestPigLatin(unittest.TestCase):
 
-    def test_something(self):
-        pass
+    def test_input_phrase(self):
+        input_phrase = "Hello world"
+        self.assertEqual("Hello world", input_phrase)
