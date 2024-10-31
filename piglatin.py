@@ -17,6 +17,8 @@ class PigLatin:
             return self._phrase + "nay"
         elif first_letter in vowels and self._phrase[-1] in vowels:
             return self._phrase + "yay"
+        elif first_letter in vowels and self._phrase[-1] not in vowels:
+            return self._phrase + "ay"
 
 
 
