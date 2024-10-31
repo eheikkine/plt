@@ -20,5 +20,9 @@ class PigLatin:
         elif first_letter in vowels and self._phrase[-1] not in vowels:
             return self._phrase + "ay"
 
+        if first_letter not in vowels:
+            word = self._phrase[1:] + first_letter
+            return word + "ay"
+
 
 

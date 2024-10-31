@@ -25,4 +25,8 @@ class TestPigLatin(unittest.TestCase):
         translator = PigLatin("ask")
         self.assertEqual("askay", translator.translate())
 
+    def test_word_starting_with_single_consonant(self):
+        translator = PigLatin("hello")
+        self.assertEqual("ellohay", translator.translate())
+
 
